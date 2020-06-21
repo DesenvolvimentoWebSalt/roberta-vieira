@@ -1,0 +1,65 @@
+.homeprocedimentos {
+  .bg-rosa {
+    padding: 60px 0 360px;
+    background-color: $background;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .alinha-procedimentos {
+        margin-top: 30px;
+
+        img {
+          width: 10px;
+          margin-right: 10px;
+        }
+        p {
+          font-size: 0.7rem;
+          font-weight: 600;
+          letter-spacing: 2px;
+          color: #fff;
+        }
+      }
+
+      h3 {
+        color: $main;
+        font-size: 2.8rem;
+        margin-top: 15px;
+        letter-spacing: 1px;
+      }
+    }
+  }
+
+  .bg-branco {
+    .container {
+      display: flex;
+      justify-content: space-between;
+      transform: translate(0, -50%);
+
+      .procedimento-a {
+        width: 23%;
+        background-color: $main;
+
+        .thumb-img {
+          height: 22vw;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+
+        p {
+          text-align: center;
+          padding: 10px 0;
+          color: #fff;
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,97 @@
+.home-angiologia {
+  padding: 240px 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .bg-main {
+      background-color: $main;
+      width: 24vw;
+      height: 48vw;
+      position: absolute;
+      right: 5vw;
+      bottom: -90%;
+      z-index: 1;
+    }
+
+    .angiologia-txt {
+      width: 48%;
+
+      .alinha-angiologia {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 12px;
+          margin-right: 10px;
+        }
+
+        .angiologia-p {
+          font-size: 0.7rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          color: $main;
+          font-weight: 600;
+          margin-bottom: unset;
+        }
+      }
+
+      h2 {
+        color: $background;
+        margin: 20px 0 40px;
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+      }
+
+      p {
+        color: $font;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        width: 50%;
+        margin-bottom: 25px;
+      }
+
+      .ver-mais {
+        margin-top: 40px;
+      }
+    }
+
+    .angiologia {
+      width: 48%;
+      z-index: 1;
+
+      .angiologia-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 15px;
+        z-index: 10;
+
+        .angiologia-box {
+          background-color: $background;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          height: 0;
+          padding-bottom: 100%;
+
+          img {
+            width: 75px;
+            margin-top: 30px;
+          }
+
+          p {
+            color: $main;
+            text-align: center;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            margin-top: 15px;
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
